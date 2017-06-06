@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  div.container
+    div.intro
+      h1.text-center sharePlex
+      h3.text-center #[em one click solution to share resources with your peers]
+    div.fileInfo
+      p.text-center Your friend/peer may have shared a file with you
+      p.text-center #[file name: ] #{file.file_name}
+      p.text-center #[file size: ] #{file.file_size}
+      a(href=file.url+'/download')
+        Button.btn.btn-primary.btn-block Download

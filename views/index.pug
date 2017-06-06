@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  div.container
+    div.intro
+      h1.text-center sharePlex
+      h3.text-center #[em one click solution to share resources with your peers]
+    div.styling
+      form(method='POST', action='',enctype="multipart/form-data")
+        input(type='file', name='fileShared')
+        Button.btn.btn-primary(type='submit') Generate URL
+
+    if file
+      div.results
+        h3 Here you go, share this url with peers!
+        a(href=file.url) https://enigmatic-beyond-45638.herokuapp.com#{file.url}
