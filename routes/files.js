@@ -3,8 +3,7 @@ var router = express.Router();
 var aws = require('aws-sdk');
 var filesShared = require('../models/filesshared')
 aws.config.update({
-    secretAccessKey: 'yJNP75fiQYbU43Azhp1PE5Mc/6LdxNYsI52oWAb2', 
-    accessKeyId: 'AKIAI4IRDWAXAOGM44JA',
+   
     signatureVersion: 'v4'
 });
 
